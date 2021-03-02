@@ -43,6 +43,7 @@ app.use('/api', paymentBRoutes);
 
 app.use('/api', orderRoutes);
 
+app.use(express.static(__dirname + '/'));
 //PORT
 const port = process.env.PORT || 8000;
 
