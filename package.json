@@ -5,7 +5,6 @@
   "main": "app.js",
   "scripts": {
     "start": "nodemon app.js",
-    "prod": "NODE_ENV=production node app.js",
     "postinstall": "webpack -p"
   },
   "keywords": [],
