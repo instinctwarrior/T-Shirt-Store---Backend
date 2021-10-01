@@ -29,6 +29,10 @@ const orderSchema = new mongoose.Schema(
 			default: 'received',
 			enum: ['cancelled', 'delivered', 'shipped', 'processing', 'received'],
 		},
+		number: {
+			type : Number,
+			maxlength: 11,
+		},
 		updated: Date,
 		user: {
 			type: ObjectId,
