@@ -16,6 +16,13 @@ const {
 	orderStatus,
 	updateStatus,
 } = require('../controllers/order');
+//Payment gateway
+const {
+	isSignedIn,
+	isAuthenticated,
+} = require('../controllers/authentication');
+const { getToken, processPayment } = require('../controllers/paymentB');
+const { getUserById } = require('../controllers/user');
 
 //params
 router.param('userId', getUserById);
